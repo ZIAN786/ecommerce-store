@@ -1,34 +1,80 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project Title
 
-## Getting Started
+Ecommerce-Store
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Project Description
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This is a basic implementation of a throw out which will scrap primarily starting from the following url:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+https://ecommerce-store-kohl-five.vercel.app/
 
-## Learn More
+It might take time upto ~= 15 to 20 minutes for the total scrapping to be completed depending on network speed. So, I request you to be patient after running the script and you can keep an eye on the console to have a rough idea about the progress of the process.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Requirements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+For development, you will only need Node.js and a node global package, NPM, installed in your environement.
 
-## Deploy on Vercel
+External packages used:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    "lucide-react": "^0.263.1",
+    "query-string": "^8.1.0",
+    "clsx": "^2.0.0"
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+
+## Install
+
+    $ git clone https://github.com/ZIAN786/ecommerce-store
+    $ cd ecommerce-store
+    $ npm install
+
+## Running the project
+
+    $ npm run dev
+
+## Sample Output
+
+## Function Description:
+
+<br/><br/>
+
+> ### addItems (page) -->
+>
+> It fetches item urls + item ids (unique ids that the portal uses) from list page.
+
+> ### individualItem (page) -->
+>
+> Shows how many category related for the provided initial url
+
+> ### productItem (page) -->
+>
+> It shows the actual description and parses into the format: item id, title, price, size,color.
+
+> ### getNextPageUrl (page) -->
+>
+> Previously mentioned other three functions are being invoked here.
+> It primarily navigates to the next page. It will stop working if next page is not is available.
+
+<br/><br/>
+
+## Following are thoughts or questions/answers:
+
+1. Used Try-Catch block wehre seemed necessary. Can use it in more places to making the error handling process smoother. We can use built-in timeout option in puppeteer to handle timeout errors.
+
+2. I was not 100% sure about what was meant by "Accessing more ads from this link than the limit allows (max 50 pages)?". But I think we can replicate the API call format used by otomoto to access more data then we are allowed to access.
+
+3. I have basic ideas about Github Actions as CI/CD tool. But can learn more jenkins or other similar tools if needed.
+
+4. I've researched a bit and found that we can use mitm proxy tool for scrapping mobile applications (like otomot) but not 100% sure how to do that. But can give that a try later if needed.
+
+5. The performance can be improved by adding some waiting function. (like waitForUntil and its various values).
+
+6. We can expose this scrapper as an API using express.js along with other authentication/authorization systems and build a Front-End using ReactJS or VueJS and deploy it in a server and make it easily accessible for use.
+
+7. Codes can be more cleaner by making it more modular. By modular I mean that extracting various functions to separate file and importing them from there to use in the main index.js file.
