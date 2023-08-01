@@ -38,8 +38,6 @@ External packages used:
 
     $ npm run dev
 
-## Sample Output
-
 ## Function Description:
 
 <br/><br/>
