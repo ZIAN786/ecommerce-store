@@ -18,7 +18,7 @@ It might take time upto ~= 15 to 20 minutes for the total scrapping to be comple
 
 ## Requirements
 
-For development, you will only need Node.js and a node global package, NPM, installed in your environement.
+For development, you will only need Node.js and a node global package, NPM, installed in your environment.
 
 External packages used:
 
