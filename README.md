@@ -8,7 +8,7 @@ Ecommerce-Store
 
 ---
 
-This is a basic implementation of a throw out which will scrap primarily starting from the following url:
+This is a live url of the project:
 
 https://ecommerce-store-kohl-five.vercel.app/
 
