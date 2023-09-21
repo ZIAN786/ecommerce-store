@@ -38,8 +38,6 @@ External packages used:
 
     $ npm run dev
 
-<br/><br/>
-
 ## Following are thoughts or questions/answers:
 
 1. This provides detailed product descriptions, size guides, and customer reviews.
