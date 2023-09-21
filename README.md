@@ -12,7 +12,7 @@ This is a live url of the project:
 
 https://ecommerce-store-kohl-five.vercel.app/
 
-It might take time upto ~= 15 to 20 minutes for the total scrapping to be completed depending on network speed. So, I request you to be patient after running the script and you can keep an eye on the console to have a rough idea about the progress of the process.
+Optimising and improving an e-commerce store's functionality, customer experience, and performance is essential for success in the always changing digital market. The goal of this project is to update an existing online store so that it complies with modern consumer demands, market trends, and technology developments.
 
 ---
 
@@ -38,37 +38,11 @@ External packages used:
 
     $ npm run dev
 
-## Function Description:
-
-<br/><br/>
-
-> ### addItems (page) -->
->
-> It fetches item urls + item ids (unique ids that the portal uses) from list page.
-
-> ### individualItem (page) -->
->
-> Shows how many category related for the provided initial url
-
-> ### productItem (page) -->
->
-> It shows the actual description and parses into the format: item id, title, price, size,color.
-
-> ### getNextPageUrl (page) -->
->
-> Previously mentioned other three functions are being invoked here.
-> It primarily navigates to the next page. It will stop working if next page is not is available.
-
 <br/><br/>
 
 ## Following are thoughts or questions/answers:
 
-1. Used Try-Catch block where seemed necessary. Can use it in more places to making the error handling process smoother.
-
-2. I have basic ideas about Github Actions as CI/CD tool. But can learn more jenkins or other similar tools if needed.
-
-3. The performance can be improved by adding some waiting function.
-
-4. We can expose this scrapper as an API using express.js along with other authentication/authorization systems and build a Front-End using ReactJS or VueJS and deploy it in a server and make it easily accessible for use.
-
-5. Codes can be more cleaner by making it more modular.
+1. This provides detailed product descriptions, size guides, and customer reviews.
+2. It allows users to mix and match items to create stylish ensembles.
+3. It also offers a wide range of clothing items and accessories for online purchase.
+4. This assists in selling products directly to consumers through digital storefronts.
