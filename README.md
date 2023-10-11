@@ -10,7 +10,7 @@ Ecommerce-Store
 
 This is a live url of the project:
 
-ecommerce-store-zian786.vercel.app
+https://ecommerce-store-zian786.vercel.app/
 
 Optimising and improving an e-commerce store's functionality, customer experience, and performance is essential for success in the always changing digital market. The goal of this project is to update an existing online store so that it complies with modern consumer demands, market trends, and technology developments.
 
