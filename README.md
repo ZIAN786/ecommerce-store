@@ -26,10 +26,15 @@ For development, you will only need Node.js and a node global package, NPM, inst
 
 External packages used:
 
-    "lucide-react": "^0.263.1",
-    "query-string": "^8.1.0",
-    "clsx": "^2.0.0"
-
+    "axios": "^1.4.0",
+    "clsx": "^2.0.0",
+    "next": "13.4.12",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.1.6",
+    "zustand": "^4.3.9"
 ---
 
 ## Install
